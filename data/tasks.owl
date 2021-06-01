@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/untitled-ontology-4"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Behavioral_Modeling_Task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Behavioral_Modeling_Task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Chance_Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Chance_Game">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Chess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Chess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#No_Chance_Game"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Perfect_Information_Game"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Sequential_Game"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Two_Person_Game"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Zero_Sum_Game"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#2_Player_Prisoner&apos;s_Dilemma"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Classification_Task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Classification_Task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Epistemic_Planning_Task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Epistemic_Planning_Task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Planning_Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Game">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Geometric_Task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Geometric_Task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Grid_World_Task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Grid_World_Task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Geometric_Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Imperfect_Information_Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Imperfect_Information_Game">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Multi_Criteria_Decision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Multi_Criteria_Decision">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Behavioral_Modeling_Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#No_Chance_Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#No_Chance_Game">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Non_Sequential_Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Non_Sequential_Game">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Non_Zero_Sum_Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Non_Zero_Sum_Game">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Perfect_Information_Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Perfect_Information_Game">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Planning_Task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Planning_Task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Question_Answering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Question_Answering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Text_Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Sequential_Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Sequential_Game">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Solitaire_Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Solitaire_Game">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Task"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Text_Summarization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Text_Summarization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Text_Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Text_Task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Text_Task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Text_World_Task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Text_World_Task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Text_Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Two_Or_More_Person_Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Two_Or_More_Person_Game">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Two_Person_Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Two_Person_Game">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Two_Or_More_Person_Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Zero_Sum_Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Zero_Sum_Game">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#2_Player_Prisoner&apos;s_Dilemma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#2_Player_Prisoner&apos;s_Dilemma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#No_Chance_Game"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Non_Sequential_Game"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Non_Zero_Sum_Game"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Perfect_Information_Game"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jonathanlenchner/ontologies/2021/4/tasks#Two_Person_Game"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
