@@ -41,10 +41,17 @@ class AgentSystem:
     aggregate_reward = 0  # Aggregate reward earned by the agent
     aggregate_cost = 0    # Aggregate cost incurred by the agent
     aggregate_duration = 0  # Aggregate duration taken by the agent; maybe same as cost
-
+    decision_stats  = []      # Log decision statistics for reporting purpose
     
     def __init__(self):
         print ("Agent System class instantiated")
+        
+    def reset(self):
+        self.current_time = 0      # Current time
+        self.aggregate_reward = 0  # Aggregate reward earned by the agent
+        self.aggregate_cost = 0    # Aggregate cost incurred by the agent
+        self.aggregate_duration = 0  # Aggregate duration taken by the agent; maybe same as cost
+        self.decision_stats  = []
 
     def printAgentSystem(self):
         print("mc: ", self.mc)
@@ -53,18 +60,26 @@ class AgentSystem:
         print("aggregate_cost:", self.aggregate_cost)        
         print("aggregate_duration:", self.aggregate_duration) 
         
-    # Run simulation up to time instant given
-    def runSimulation(self, time):
+    # Run simulation up to 'count' decision times given as input
+    def runSimulation(self, count):
         
-        for i in range(time):
+        for i in range(count):
             index = self.mc.chooseSolver()
             
             self.aggregate_duration += self.mc.solvers[index].solver_time_taken
             self.aggregate_reward += self.mc.solvers[index].solver_output_reward      
             self.current_time = self.aggregate_duration
 
-            print(" -> sim = " + str(i) + ", solver = " + str(index) + ", duration = " + str(self.aggregate_duration) +
-                 ",  agg. reward = " + str(self.aggregate_reward))
+            current_decision_stat = [i, index, self.aggregate_duration, self.aggregate_reward]
+            print(" -> decision# = " + str(current_decision_stat[0]) + 
+                  ", solver = " + str(current_decision_stat[1]) + 
+                  ", duration = " + str(current_decision_stat[2]) +
+                 ",  agg. reward = " + str(current_decision_stat[3]))
+             # print(" -> decision# = " + str(i) + ", solver = " + str(index) + ", duration = " + str(self.aggregate_duration) +
+             #    ",  agg. reward = " + str(self.aggregate_reward))
+          
+            # Add decision
+            self.decision_stats.append(current_decision_stat)
 
  
 # For the MC
